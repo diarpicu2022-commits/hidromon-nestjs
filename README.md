@@ -27,8 +27,7 @@ agricultores y administradores pueden:
 - 🎯 **Definir umbrales** mínimos y máximos para cada cultivo o zona.
 - 🚨 **Recibir alertas** cuando una lectura se sale del rango.
 
-Este repositorio contiene el **backend**. Está hecho en NestJS con el mismo patrón que vimos
-en la práctica 3 de *Framework WEB*: modelo, DTO, controlador y servicio, con los datos
+Este repositorio contiene el **backend**. Está hecho en NestJS con: modelo, DTO, controlador y servicio, con los datos
 guardados en memoria.
 
 ## 🧩 Entidades
