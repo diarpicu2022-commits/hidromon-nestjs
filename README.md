@@ -152,6 +152,38 @@ src/
 - Los DTO tienen validaciones, pero todavía no se aplican porque `main.ts` no activa el `ValidationPipe`.
 - `npm run test` no arranca con la configuración actual: NestJS 12 se distribuye como ES Module y el Jest de la plantilla no lo carga. Le pasa igual a la plantilla de la práctica.
 
+## 🤝 Cómo contribuir
+
+Nadie sube directo a `main` ni a `develop`. Cada cambio va en su propia rama y entra por Pull Request a `develop`.
+
+```bash
+git switch develop
+git pull
+git switch -c feature/<lo-que-vas-a-hacer>
+# ...haces tus cambios...
+git add .
+git commit -m "feat(zonas): agregar busqueda por nombre"
+git push -u origin feature/<lo-que-vas-a-hacer>
+```
+
+Luego abres el PR en GitHub hacia `develop`. La descripción se llena sola con la plantilla del equipo
+(`.github/pull_request_template.md`): título, **Feature**, **Dev**, **Cambios** y **Pantallazos**.
+Las cuatro secciones son obligatorias.
+
+Los mensajes de commit siguen *Conventional Commits*:
+
+| Tipo | Cuándo |
+|---|---|
+| `feat` | Nueva funcionalidad o endpoint |
+| `fix` | Corrección de un error |
+| `refactor` | Reorganizar código sin cambiar lo que hace |
+| `style` | Formato, espacios, comas |
+| `docs` | README o comentarios |
+| `test` | Pruebas |
+| `chore` | Configuración, dependencias, `.gitignore` |
+
+Se puede indicar el módulo entre paréntesis: `fix(lecturas): ...`.
+
 ## 👥 Equipo
 
 | Integrante | Programa |
